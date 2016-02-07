@@ -3,8 +3,6 @@ Wrapper for cli apps.
 
 Write less commands for your frequent apps. Simple but useful.
 
-[![asciicast](https://asciinema.org/a/35746.png)](https://asciinema.org/a/35746)
-
 ### Install
 ```shell
 $ go get github.com/abiosoft/runcmd
@@ -57,3 +55,5 @@ Inbuilt commands starts with `.` to avoid collision with the wrapped cli app.
 .clear  clear screen
 .help   show this help
 ```
+### Demo
+<a href="https://asciinema.org/a/35746" target="_blank"><img src="https://asciinema.org/a/35746.png" width="600" /></a>
