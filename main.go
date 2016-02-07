@@ -74,6 +74,10 @@ func main() {
 		app.resetPrompt()
 		return "", shell.ClearScreen()
 	})
+	// help text
+	shell.Register(".help", func(args ...string) (string, error) {
+		return help, nil
+	})
 
 	app.shell = shell
 	app.resetPrompt()
@@ -94,3 +98,9 @@ func (r *runCmd) run(args []string) error {
 func (r *runCmd) resetPrompt() {
 	r.shell.SetPrompt(strings.Join(r.cmds, " ") + "> ")
 }
+
+const help = `.env    list/add environment variable
+.switch switch to another command.
+.clear  clear screen.
+.help   show this help
+`
