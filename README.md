@@ -25,6 +25,12 @@ go> build -o outfile
 go> test
 ...
 ```
+You can include args or subcommands.
+```shell
+$ runcmd docker -H 127.0.0.1:8333 run
+docker -H 127.0.0.1:8333 run> -it alpine sh
+#/ |
+```
 
 Multiline
 ```shell
